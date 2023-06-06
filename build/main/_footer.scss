@@ -1,0 +1,17 @@
+.footer_container{
+    background-color: $color-black;
+
+    .news_letter{
+        @include row;
+        @media (max-width: $medium - 1px){
+            @include column;
+            > *{
+                margin: 20px 0px;
+                text-align: center;
+            }
+        }
+        padding: 107px 0px;
+    }
+    p{color: $color-milky_white}
+}
+

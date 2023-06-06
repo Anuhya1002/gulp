@@ -1,0 +1,26 @@
+
+// Primary_Button
+.btn {
+    font-size: 12px;
+    font-weight: $font-weight-700;
+    text-align: center;
+    background-color:$color-dark_mustard;
+    color: $color-light_pink;
+    font-family: $font_primary;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 8px 47px;
+    cursor: pointer;
+  
+    @media (max-width: $small ) {
+      font-size: 24px;
+    }
+}
+
+
+// Secondary_Button
+
+.btn_secondary{
+    background-color: $color-dark_light_pink;
+}

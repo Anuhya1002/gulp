@@ -1,0 +1,27 @@
+.feature_section{
+    background-color: $color-light_pink;
+}
+.card_container {
+    @include row;
+    @media (max-width: $medium - 1px){
+        @include column;
+    }
+
+    .card {
+        @include text_start_column;
+        @include feature_card;
+        @media (max-width: $medium - 1px){
+            margin-bottom: 20px;
+        }
+        
+    }
+
+
+    img {
+        max-width: 200px;
+    }
+    h2,
+    p {
+        margin: 20px 0px;
+    }
+}

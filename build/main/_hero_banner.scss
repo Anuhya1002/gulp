@@ -1,0 +1,48 @@
+.banner_container{
+    background-color: $color-light_pink;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.main_banner_container{
+    @include row;
+    @media (max-width: $medium - 1px){
+        @include column;
+        flex-direction: column-reverse;
+    }
+
+    .right_side_text_container{
+        @include column;
+        text-align: center;
+        margin: 0px 40px;
+        max-width: 50%;
+        @media(max-width: $medium - 1px){
+            max-width: 100%;
+        }
+        }
+
+
+    h1{
+        font-family: $font_heading;
+        font-size: 100px;
+        font-weight: $font_weight_400;
+        color: $color-dark_mustard;
+        @media (max-width : $medium - 1px){
+            font-size: 60px;
+            
+        }
+    }
+
+    .btn{
+        margin-top: 30px;
+    }
+
+}
+
+.left_side_image{
+    height: 100%;
+    img{
+    width: 100%;
+
+    }
+}

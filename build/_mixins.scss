@@ -1,0 +1,51 @@
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Text Center and Row
+
+@mixin text_center_row {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+// Text Center and Column
+
+@mixin text_center_column {
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin text_start_column {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@mixin feature_card {
+    padding: 20px;
+    border-color: $color-mustard;
+    border-style: solid;
+    max-width: 250px;
+    margin-right: 20px;
+    border-radius: 0px 40px;
+}
